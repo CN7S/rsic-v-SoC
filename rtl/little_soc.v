@@ -49,7 +49,7 @@ module little_soc #(
     ) u_sram (
         .clk   (clk),
         .rst_n (rst_n),
-        .cs    (mem_cs),
+        .cs    (sram_sel),
         .we    (mem_we),
         .be    (mem_be),
         .addr  (mem_addr[SRAM_ADDR_WIDTH-1:0]),
